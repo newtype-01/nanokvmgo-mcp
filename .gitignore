@@ -1,0 +1,40 @@
+# Python/build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local configuration, credentials and device trust material
+.env
+.env.*
+config.json
+api-key
+*-api-key
+web-session.cookie
+*.cookie
+*.cookies
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Runtime-only cache and captured user content
+cache/
+outputs/
+screenshots/
+recordings/
+transcripts/
+vision_ocr
+*.log
+
+# Editor/OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
