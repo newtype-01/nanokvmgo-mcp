@@ -24,9 +24,10 @@ jobs:
           - os: macos-latest
             python: "3.13"
     env:
-      NANOKVM_CONFIG_DIR: ${{ runner.temp }}/nanokvmgo-test-config
       NANOKVM_API_KEY: ""
     steps:
+      - name: Isolate runtime configuration
+        run: echo "NANOKVM_CONFIG_DIR=$RUNNER_TEMP/nanokvmgo-test-config" >> "$GITHUB_ENV"
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
